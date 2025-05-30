@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "11bb6a26-2928-49cb-8412-d07f4cb52571",
+		"name": "role-option",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40791248"
+	},
+	"item": [
+		{
+			"name": "post-role-option",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idRole\":53,\r\n    \"idOption\":1,\r\n    \"estatus\":true\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/option",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"option"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put-role-option",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"idRole\": 53,\r\n    \"idOption\": 7,\r\n    \"status\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/option",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"option"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-role-option",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/option",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"option"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-role-option-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/option/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"option",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-role-option",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/option/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"option",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

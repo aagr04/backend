@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "b22a45e2-ac4b-44c1-a746-cd215cc9fee9",
+		"name": "persona",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40791248"
+	},
+	"item": [
+		{
+			"name": "post-persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Agustin\",\r\n    \"apellido\": \"Guevara\",\r\n    \"cedula\": \"0923701072\",\r\n    \"fechaNacimiento\": \"1999-07-04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7880/api/v1/persona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7880",
+					"path": [
+						"api",
+						"v1",
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put-persona",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"Abel Agustin\",\r\n    \"apellido\": \"Guevara\",\r\n    \"cedula\": \"0923701072\",\r\n    \"fechaNacimiento\": \"1999-07-04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7880/api/v1/persona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7880",
+					"path": [
+						"api",
+						"v1",
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-persona-list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7880/api/v1/persona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7880",
+					"path": [
+						"api",
+						"v1",
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-persona",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7880/api/v1/persona/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7880",
+					"path": [
+						"api",
+						"v1",
+						"persona",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-persona",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7880/api/v1/persona/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7880",
+					"path": [
+						"api",
+						"v1",
+						"persona",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

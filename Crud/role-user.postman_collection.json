@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "6335dff7-cf05-4a5f-a056-4c0d382b3b5a",
+		"name": "role-user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40791248"
+	},
+	"item": [
+		{
+			"name": "post-role-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idRole\":55,\r\n    \"idUser\":2,\r\n    \"estatus\":true\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put-role-user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"idRole\": 69,\r\n    \"idUser\": 2,\r\n    \"status\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-role-user-list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-role-user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/user/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"user",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-role-user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7881/role/user/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7881",
+					"path": [
+						"role",
+						"user",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
