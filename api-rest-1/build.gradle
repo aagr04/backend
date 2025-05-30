@@ -1,0 +1,50 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.5.0'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+<<<<<<< HEAD
+group = 'com.agr'
+=======
+group = 'role-management'
+>>>>>>> c2f9c22f66b243da61ea382b80be9ac503b6e649
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+<<<<<<< HEAD
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+=======
+>>>>>>> c2f9c22f66b243da61ea382b80be9ac503b6e649
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+<<<<<<< HEAD
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.projectlombok:lombok'
+=======
+	runtimeOnly 'org.postgresql:postgresql'
+>>>>>>> c2f9c22f66b243da61ea382b80be9ac503b6e649
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
